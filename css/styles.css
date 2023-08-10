@@ -1,0 +1,171 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-picture-1-4 {
+  width: min(60%);
+  border-radius: 50%;
+}
+
+.outline-1 {
+  outline: 2px solid;
+  outline-color: hsl(263, 68%, 64%);
+}
+
+.outline-2 {
+  outline: 2px solid;
+  outline-color: hsl(263, 55%, 52%);
+}
+
+.profile-picture-2-3-5 {
+  width: min(60%);
+  border-radius: 50%;
+}
+
+.white-name {
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+
+.verified {
+  margin: 0;
+  opacity: 70%;
+}
+
+.text-color .verified {
+  color: hsl(0, 0%, 100%);
+  opacity: 50%;
+}
+
+.text-color h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-container {
+  display: grid;
+ 
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+.grid-item-1 {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+  background-size: 22%;
+}
+
+.grid-item-1 :last-child {
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+}
+
+.grid-item-2 {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.grid-item-2 :first-child {
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-item-2 p {
+  color: hsl(210, 46%, 95%);
+  opacity: 70%;
+}
+
+.grid-item-3 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.grid-item-3 h3 {
+  color: hsl(217, 19%, 35%);
+}
+
+.grid-item-3 :first-child {
+  color: hsl(213, 29%, 6%);
+  margin: 0;
+}
+
+.grid-item-3 p {
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+.grid-item-4 {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.grid-item-4 h3 {
+  color: hsl(210, 46%, 95%);
+}
+
+.grid-item-4 p {
+  color: hsl(210, 46%, 95%);
+  opacity: 70%;
+}
+
+.grid-item-5 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.kira-name-color {
+  margin: 0;
+  color: hsl(213, 29%, 6%);
+}
+
+.grid-item-5 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.grid-item-5 h3 {
+  color: hsl(217, 19%, 35%);
+}
+
+.grid-item-5 p {
+  opacity: 70%;
+}
+
+
+
+@media (min-width: 50em) {
+  .kira-grid {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+  }
+.grid-container{ 
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+  
+}
